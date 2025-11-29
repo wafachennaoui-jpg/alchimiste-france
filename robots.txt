@@ -1,0 +1,11 @@
+# robots.txt — lalchimiste-studio.fr
+
+User-agent: *
+Allow: /
+# Ne pas indexer les fichiers techniques
+Disallow: /mail-it.php
+Disallow: /send.php
+Disallow: /request.json
+
+Sitemap: https://lalchimiste-studio.fr/sitemap.xml
+Host: lalchimiste-studio.fr

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://lalchimiste-studio.fr/</loc>
+    <lastmod>2025-11-16T23:13:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Projets -->
+  <url>
+    <loc>https://lalchimiste-studio.fr/project1.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project2.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project3.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project4.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project5.html</loc>
+    <lastmod>2025-11-17T01:57:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project6.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project7.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project8.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project9.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://lalchimiste-studio.fr/project10.html</loc>
+    <lastmod>2025-11-17T01:38:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>

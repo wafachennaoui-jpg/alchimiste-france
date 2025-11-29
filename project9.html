@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns#">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- title -->
+  <!DOCTYPE html>
+ <html lang="fr" prefix="og: http://ogp.me/ns#">
+
+  <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  
+  <title>Création logo Paris | Identité visuelle & charte – L'Alchimiste</title>
+  
+  <meta name="description" content="L'Alchimiste, studio expert en création de logo à Paris : logos sur-mesure, identité visuelle, chartes graphiques et déclinaisons multi-supports. Direction artistique premium pour marques ambitieuses."/>
+  <meta name="keywords" content="création logo Paris, creation de logo Paris, agence logo Paris, designer logo Paris, identité visuelle, charte graphique, branding Paris, studio créatif Paris, agence design Paris"/>
+  <meta name="robots" content="index,follow,max-image-preview:large"/>
+  <link rel="canonical" href="https://lalchimiste-studio.fr/project1.html"/>
+
+  <!-- Balises Open Graph -->
+  <meta property="og:title" content="Création logo Paris – L'Alchimiste" />
+  <meta property="og:description" content="Logos sur-mesure, identité de marque et chartes graphiques. Studio expert en création de logo à Paris." />
+  <meta property="og:image" content="https://lalchimiste-studio.fr/img/footer_logo.jpg" />
+  <meta property="og:url" content="https://lalchimiste-studio.fr/project1.html" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Pour Twitter (optionnel, mais recommandé) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://lalchimiste-studio.fr/img/footer_logo.jpg" />
+  <meta name="twitter:title" content="Création logo Paris – L'Alchimiste" />
+  <meta name="twitter:description" content="Création de logo & identité visuelle premium à Paris." />
+  <!-- favicon -->
+  <link href="img/logo.svg" rel="icon" type="image/png"/>
+  <link href="favicon.png" rel="shortcut icon"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  
+  <!-- all css here -->
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/swipper.css" />
+  <link rel="stylesheet" href="css/helper.css" />
+  <link rel="stylesheet" href="css/style1.css" />
+  <link rel="stylesheet" href="css/project_style.css" />
+  <link rel="stylesheet" href="css/responsive1.css" />
+  <link rel="stylesheet" href="css/project_responsive.css" /><script>
+    /**
+     * showSuccessPopup(title, message, options)
+     * - options.autoHideMs: délai en ms avant fermeture automatique.
+     *    - si 0 (ou absent) => AUCUNE fermeture automatique (le visiteur ferme manuellement)
+     *    - si >0 => fermeture auto après ce délai (option conservée si souhaitée ultérieurement)
+     */
+    function showSuccessPopup(title='Email sent successfully', message='Votre message a été envoyé avec succès.', options){
+      options = options || {};
+      var autoHideMs = typeof options.autoHideMs === 'number' ? options.autoHideMs: 0; // par défaut 0 -> pas d'auto hide
+    
+      const overlay = document.getElementById('mailSuccess');
+      if(!overlay) return;
+      const titleEl = overlay.querySelector('#mailSuccessTitle');
+      const msgEl = overlay.querySelector('#mailSuccessMsg');
+      if(titleEl) titleEl.textContent = title;
+      if(msgEl) msgEl.textContent = message;
+    
+      overlay.classList.add('active');
+    
+      // handlers pour fermer
+      const close = function(){
+        overlay.classList.remove('active');
+        document.removeEventListener('keydown', onKey);
+        overlay.removeEventListener('click', onOverlay);
+        if(closeBtn) closeBtn.removeEventListener('click', onCloseBtn);
+        if (autoHideTimer) { clearTimeout(autoHideTimer); autoHideTimer = null; }
+      };
+      const onKey = function(e){ if(e.key === 'Escape') close(); };
+      const onOverlay = function(e){ if(e.target === overlay) close(); };
+      const onCloseBtn = function(){ close(); };
+    
+      // attache les écouteurs
+      document.addEventListener('keydown', onKey);
+      overlay.addEventListener('click', onOverlay);
+    
+      const closeBtn = overlay.querySelector('[data-close]');
+      if(closeBtn){
+        closeBtn.addEventListener('click', onCloseBtn, { once: true });
+      }
+    
+      // Si on souhaite explicitement une fermeture automatique (option)
+      var autoHideTimer = null;
+      if (autoHideMs && autoHideMs > 0) {
+        autoHideTimer = setTimeout(close, autoHideMs);
+      }
+    }
+    
+    // Auto-trigger depuis l'URL: si ?mail=ok alors afficher mais NE PAS auto-close
+    (function autoFromQuery(){
+      try{
+        const usp = new URLSearchParams(window.location.search);
+        if (usp.get('mail') === 'ok') {
+          // appel explicite sans autoHide => visiteur ferme manuellement
+          showSuccessPopup('Email sent successfully', 'Votre message a été envoyé.', { autoHideMs: 0 });
+        }
+      } catch(e){}
+    })();
+    </script><script>
+  (function(){
+    function stopVideos(scope){
+      (scope || document).querySelectorAll('video').forEach(function(v){
+        try {
+          v.pause();
+          v.currentTime = 0; // remet la vidéo au début
+        } catch(e){}
+      });
+    }
+  
+    // Délégation d'événements pour couvrir tous les popups existants
+    document.addEventListener('click', function(e){
+      // on cible les boutons de fermeture et l'overlay
+      var btn = e.target.closest('.video_popup .close_popup, .video_popup .hide_overlay');
+      if(btn){
+        var popup = btn.closest('.video_popup');
+        if(popup){
+          stopVideos(popup);
+          popup.classList.remove("opened"); // au cas où tu gères l'ouverture avec une classe
+        }
+      }
+    }, true);
+  })();
+  </script>
+  <script>
+  function handleBookDownload(e) {
+    e.preventDefault(); // Empêche l'envoi classique
+    const form = e.target;
+    const formData = new FormData(form);
+  
+    // Envoi AJAX vers mail-it.php
+    fetch(form.action, {
+      method: form.method,
+      body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+      // Affiche le message de succès
+      document.getElementById("status-book_download").innerHTML = "✔️ Merci, votre demande est bien reçue !";
+  
+      // Déclenche le téléchargement du PDF
+      window.location.href = "corporate_profile.pdf";
+    })
+    .catch(error => {
+      document.getElementById("status-book_download").innerHTML = "❌ Erreur lors de l'envoi.";
+      console.error("Erreur:", error);
+    });
+  
+    return false;
+  }
+  </script>
+  
+  
+</head>
+
+<body>
+
+  <!-- Header area -->
+  <header class="site_header">
+    <div class="container-fluid pr_60">
+      <nav class="navbar">
+        <div class="header_left">
+          <div class="hamburger_wrap">
+            <div class="hamburger_btn hamburger menu_toggle">
+              <img src="img/menu.svg" class="Hamburger_icon" alt="menu création logo Paris">
+              <img src="img/close.png" class="close_icon" alt="fermer le menu" />
+            </div>
+          </div>
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="L'Alchimiste – création logo Paris" />
+          </a>
+          <div class="header_left_links">
+            <p class="text_md">Phone : <a href="tel:01 86 61 73 78">01 86 61 73 78</a></p>
+            <p class="text_md">E-mail : <a href="mailto:hello@lalchimiste-studio.fr">hello@lalchimiste-studio.fr</a></p>
+          </div>
+        </div>
+        <div class="header_right">
+          <div class="primary_menu d-flex align-items-center">
+            <ul class="main_menu d-flex align-items-center">
+            <li><a href="index.html" class="menu_link text_sm active">HOME</a></li>
+              <li><a href="index.html#about" class="menu_link text_sm">ABOUT</a></li>
+              <li><a href="index.html#portfolio" class="menu_link text_sm">PORTFOLIO</a></li>
+              <li><a href="index.html#news" class="menu_link text_sm">NEWS</a></li>
+              <li><a href="index.html#alchispace" class="menu_link text_sm">ALCHISPACE</a></li>
+              <li><a href="index.html#contact" class="menu_link text_sm">CONTACT</a></li>
+            </ul>
+            <div class="mobile_menu_bottom">
+              <div class="header_left_links">
+                <p class="text_md">Phone : <a href="tel:01 86 61 73 78">01 86 61 73 78</a></p>
+                <p class="text_md">E-mail : <a href="mailto:hello@lalchimiste-studio.fr">hello@lalchimiste-studio.fr</a></p>
+              </div>
+              
+            </div>
+          </div>
+          <img src="img/picto.png" class="picto" alt="pictogramme création logo Paris">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main_content -->
+  <main class="main_content">
+
+    <!-- Hero area -->
+    <div class="prev_next" data-aos="fade-up" data-aos-delay="100">
+      <div class="container-fluid">
+        <div class="row pl_60 pr_60">
+          <a href="project8.html" class="arrow_btn prev">
+            <div class="icon">
+              <img src="img/arrow_left.svg" alt="projet précédent">
+            </div>
+            <span>Previous Project</span>
+          </a>
+          <a href="index.html#portfolio" class="cross">
+            <img src="img/close.svg" alt="fermer">
+          </a>
+          <a href="project10.html" class="arrow_btn next">
+            <div class="icon">
+              <img src="img/arrow_right.svg" alt="projet suivant">
+            </div>
+            <span>Next Project</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero v2 -->
+    <div class="hero_v2_area">
+      <div class="container-fluid">
+
+        <div class="hero_v2_content pl_60 pr_60 d-flex">
+          <div class="herov2_left" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="title_31">Quand la data guide la raison, l’émotion façonne la connexion.</h3>
+          </div>
+          <div class="herov2_right">
+            <div class="herov2_box" data-aos="fade-up" data-aos-delay="0">
+              <span>DELIVERABLES</span>
+              <p>Branding<br>
+                Packaging design</p>
+            </div>
+            <div class="herov2_box" data-aos="fade-up" data-aos-delay="200">
+              <span>SOLUTIONS</span>
+              <p>DCD<br>
+                DATEM<br>
+                Storytelling</p>
+            </div>
+            <div class="herov2_box" data-aos="fade-up" data-aos-delay="400">
+              <span>PREPARED FOR</span>
+              <p>Degla Oliva</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Hero Slider -->
+    <div class="hero_slider_area">
+      <div class="container-fluid">
+        <div class="pl_60 pr_60" data-aos="fade-up" data-aos-delay="100">
+          <div class="hero_slider mySwiper">
+
+            <!-- swiper-wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slider1_project10.jpg" class="Calque_5_img" alt="Création de logo & identité – Paris">
+              </div><div class="swiper-slide">
+                <img src="img/slider2_project10.jpg" class="Calque_5_img" alt="Système de marque & charte – création logo Paris">
+              </div><div class="swiper-slide">
+                <img src="img/slider3_project10.jpg" class="Calque_5_img" alt="Déclinaisons visuelles – studio création logo Paris">
+              </div>
+              
+             
+            </div>
+
+            <!-- swiper_pagination -->
+            <div class="swiper_pagination"></div>
+
+            <!-- slider_arrow -->
+            <div class="slider_arrow">
+              <button class="swiper-button-prev swipper-arrow-prev" tabindex="-1" aria-label="Previous slide">
+                <img src="img/arrow_left.svg" alt="projet précédent">
+              </button>
+              <button class="swiper-button-next swipper-arrow-next" tabindex="0" aria-label="Next slide"
+                aria-controls="swiper-wrapper-3cd0336089806fdd" aria-disabled="false">
+                <img src="img/arrow_right.svg" alt="projet suivant">
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service area -->
+    <div class="service_area">
+      <div class="container-fluid">
+        <div class="service_content">
+          <p data-aos="fade-up" data-aos-delay="100">DEGL OLIVA — Voyage & Douceur
+<br>			  
+<br>DEGL OLIVA raconte la rencontre entre la richesse des dattes et la noblesse de l’huile d’olive.
+<br>Une alliance rare et précieuse, pensée comme un hommage aux traditions méditerranéennes et à l’art du goût authentique.
+<br>Notre mission : traduire cette fusion unique en un univers visuel raffiné, évocateur et intemporel, où chaque flacon devient une invitation au voyage sensoriel.</p>
+          <div class="row pt_25">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="service_box">
+                <span></span>
+                <h6>Challenge</h6>
+                <ul>
+               Le défi était d’exprimer la singularité d’un produit à la croisée du gourmet et du bien-être, tout en lui donnant une identité premium, élégante et différenciante.
+<br>
+<br>Objectifs clés :
+<br>• Mettre en valeur une innovation naturelle : l’huile d’olive infusée aux dattes
+<br>• Créer un storytelling visuel autour du voyage, de la douceur et du savoir-faire
+<br>• Développer une identité capable de séduire un marché international exigeant
+<br>• Fusionner tradition et modernité dans une écriture graphique forte
+<br>• Construire un système packaging à la fois patrimonial et contemporain</ul>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service_box">
+                <span></span>
+                <h6>Approche</h6>
+                <p>Nous avons activé notre méthodologie DCD – Data Creative Data pour analyser les tendances du marché gourmet et les codes du segment “huile d’olive d’exception”.
+<br>Puis, via DATEM – Data-to-Emotion, nous avons traduit la richesse du produit en une narration visuelle symbolique et sensible.
+<br>
+<br>• Iconographie inspirée des routes anciennes de l’huile et des dattes
+<br>• Palette dorée et ambrée évoquant la chaleur, la lumière et la matière naturelle
+<br>• Typographie noble et contemporaine, inspirée des gravures anciennes
+<br>• Composition symétrique et équilibrée rappelant les codes du luxe discret
+<br>• Finition or chaude et effets de dégradés évoquant la fusion des deux ingrédients
+<br>
+<br>L’approche a permis d’ancrer la marque dans un univers à la fois sensoriel, culturel et émotionnel.</p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service_box">
+                <span></span>
+                <h6>Solution</h6>
+                <p>Nous avons conçu une plateforme packaging premium articulée autour du concept “Voyage & Douceur” :
+<br>
+<br>• Création de l’identité visuelle DEGL OLIVA et de sa charte graphique
+<br>• Illustration emblématique : un navire transportant olives et dattes, symbole de voyage et de transmission
+<br>• Système de couleurs différenciant les gammes selon les saveurs et intensités
+<br>• Packaging monobloc premium avec finitions dorées et embossage fin
+<br>• Direction artistique photographique inspirée de la gastronomie méditerranéenne
+<br>
+<br>Résultat : une marque poétique et statutaire, à la croisée du patrimoine et de l’innovation.
+<br>DEGL OLIVA incarne la douceur du voyage, l’élégance du geste et la puissance d’un goût d’exception.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image slide area -->
+    <div class="image_slide_area" data-aos="fade-up" data-aos-delay="100">
+      <div class="container-fluid">
+        <div class="image_slide_top d-flex justify-content-end">
+          <!-- slider_arrow -->
+          <div class="slider_arrow">
+            <button class="swiper-button-prev swipper-arrow-prev" tabindex="-1" aria-label="Previous slide">
+              <img src="img/arrow_left.svg" alt="projet précédent">
+            </button>
+            <button class="swiper-button-next swipper-arrow-next" tabindex="0" aria-label="Next slide"
+              aria-controls="swiper-wrapper-3cd0336089806fdd" aria-disabled="false">
+              <img src="img/arrow_right.svg" alt="projet suivant">
+            </button>
+          </div>
+        </div>
+
+        <div class="image_slider mySwiper">
+
+          <!-- swiper-wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="image_card">
+                <img src="img/image1_project10.jpg" class="image_slide" alt="Logo & système de marque – création logo Paris">
+                <img src="img/plus.svg" class="plus_icon" alt="voir le design de logo en détail">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="image_card">
+                <img src="img/image2_project10.jpg" class="image_slide" alt="Charte graphique & déclinaisons – studio création logo Paris">
+                <img src="img/plus.svg" class="plus_icon" alt="voir le design de logo en détail">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="image_card">
+                <img src="img/image3_project10.jpg" class="image_slide" alt="Identité visuelle complète – création logo Paris">
+                <img src="img/plus.svg" class="plus_icon" alt="voir le design de logo en détail">
+              </a>
+            </div> <div class="swiper-slide">
+              <a href="#" class="image_card">
+                <img src="img/image4_project10.jpg" class="image_slide" alt="Packaging & branding – studio création logo Paris">
+                <img src="img/plus.svg" class="plus_icon" alt="voir le design de logo en détail">
+              </a>
+			  </div></div>
+          <!-- swiper_pagination -->
+          <div class="swiper_pagination"></div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- video area v2 -->
+    <div class="video_area_v2" data-aos="fade-up" data-aos-delay="100">
+      <div class="container-fluid">
+        <div class="video_area_content pl_60 pr_60">
+          <h6 class="title_36 pb_85 pr_60">La donnée pense,<br>l’émotion parle<br>la marque raconte.</h6>
+          <div class="video_wrap">
+            <video width="640" height="937" controls loop poster="img/video-img_project9.png" style="object-fit: contain; background-color: black;">
+              <source src="video/portfolio8.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="maps_area maps_area_v2" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="container">
+        <!-- test_author -->
+                   
+
+        <div class="newsletter_area d-flex align-items-center justify-content-between" data-aos="fade-up" data-aos-delay="100">
+          <p>Télécharger notre Book 2025</p>
+          <div class="email">
+            <form action="mail-it.php" id="ajax-form" method="post" name="ajax-form" onsubmit="return handleBookDownload(event)">
+              <input name="form_type" type="hidden" value="book_download"/>
+              <input id="email" name="email" placeholder="email address" required type="email"/>
+              <button class="sendmail_btn" type="submit">
+                <img alt="envoyer email création logo Paris" src="img/send_icon.png"/>
+              </button>
+              <div class="form-status" id="status-book_download"></div>
+            </form>
+          </div>
+        </div>
+
+    </div>
+
+   
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer_section  pb_70">
+    <div class="footer_logo" data-aos="fade-up" data-aos-delay="100">
+      <img src="img/footer_logo.jpg" alt="L'Alchimiste – création logo Paris">
+    </div>
+    <div class="footer-container pt_35">
+      <div class="left_side">
+        <!-- Logo & About -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <a href=""><img src="img/foote_logo_sm.png" alt="logo secondaire studio création logo Paris"></a>
+          </div>
+          <p>
+            Agence de design et de branding à Paris:<br>
+            Conseil en communication, création Packaging
+          </p>
+        </div>
+      </div>
+
+      <div class="right_side">
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <a href="mailto:hello@alchimiste-studio.fr">hello@lalchimiste-studio.fr</a>
+          <a href="tel:01 86 61 73 78">01 86 61 73 78</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Adresse</h4>
+          <p>11 Rue de Magdebourg,<br>
+            75116 Paris, France</p>
+        </div>
+
+        <!-- Paris -->
+        <div class="footer-col">
+          <h4>SAS</h4>
+          <p> SIRET: 99003015700012<br>
+            Numéro TVA: FR50990030157</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>2025 © L’Alchimiste. All rights reserved.</p>
+      <p data-color="#c67050">WITH EMOTIONS BY DATA INSPIRED TEAM</p>
+    </div>
+
+  </footer>
+
+  <!-- paginacontainer -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+    <img src="img/arrow_top.png" class="arrow_top" alt="retour en haut de page" />
+  </div>
+
+  <!-- menu_overlay -->
+  <div class="menu_overlay"></div>
+
+  <!-- Popup -->
+  <div class="image_popup">
+    <span class="close_popup">&times;</span>
+    <img src="" alt="aperçu projet création logo Paris" class="popup_image">
+  </div>
+
+  <!-- all js here -->
+  <script src="js1/jquery-3.4.1.min.js"></script>
+  <script src="js1/plugins.js"></script>
+  <script src="js1/main.js"></script>
+  <script src="js1/main_project.js"></script><!-- Organization / ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "L'Alchimiste",
+  "description": "Agence de design et de branding à Paris : identité visuelle, création de logo et design packaging.",
+  "url": "https://lalchimiste-studio.fr/",
+  "logo": "https://lalchimiste-studio.fr/img/footer_logo.jpg",
+  "image": "https://lalchimiste-studio.fr/img/footer_logo.jpg",
+  "telephone": "+33 1 86 61 73 78",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11 Rue de Magdebourg",
+    "addressLocality": "Paris",
+    "postalCode": "75116",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.864536,
+    "longitude": 2.289199
+  },
+  "areaServed": "FR",
+  "foundingLocation": "Paris, France"
+}
+</script>
+
+<!-- WebSite + SearchAction -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "url":"https://lalchimiste-studio.fr/",
+  "name":"L'Alchimiste",
+  "inLanguage":"fr-FR",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://lalchimiste-studio.fr/?s={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+
+</body>
+
+</html>
+
+
+<script>
+
+</script>
