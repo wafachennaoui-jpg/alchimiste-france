@@ -1,0 +1,237 @@
+/* ------ Medium devices (tablets, 991px and down) -----*/
+@media (max-width: 991px) {
+  /* ============== hero_v2_content ============== */
+  .hero_v2_content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  /* === HERO SLIDER : image entière === */
+  .hero_slider,
+  .hero_slider .swiper-wrapper,
+  .hero_slider .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero_slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* montre toute l’image sans recadrage */
+    display: block;
+  }
+
+  .hero_slider .swiper_pagination {
+    gap: 1rem;
+    bottom: 2.5rem;
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+  }
+
+  .service_content .row {
+    gap: 2rem;
+    padding: 7rem 0;
+  }
+
+  .service_content {
+    padding: 0;
+  }
+
+  .version_v2 .pl_60.pr_60 {
+    padding-left: 0;
+    padding-right: initial;
+  }
+
+  .image_slide_area .container-fluid {
+    padding-right: 8rem;
+    max-width: calc(100% - 8rem);
+  }
+
+  .image_slider .swiper-slide {
+    width: 48rem;
+  }
+
+  .image_slide {
+    height: 33rem;
+  }
+
+  .swiper_pagination {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .video_area_v2 .title_36 {
+    padding-right: 0;
+    padding-bottom: 4rem;
+  }
+
+  .maps_area_v2 .test_author {
+    padding: 2rem 0 6rem;
+  }
+
+  .maps_area_v2 .phone-box {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .maps_area_v2 .phone-box input {
+    padding-top: 1.5rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .maps_area_v2 .phon_box_items {
+    width: 100%;
+  }
+
+  .image_slider {
+    overflow: visible;
+  }
+}
+
+/*----- sm devices (tablets, 767px and down) -----*/
+@media (max-width: 767px) {
+  .arrow_btn span {
+    display: none;
+  }
+
+  .herov2_right {
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .service_content .row {
+    grid-template-columns: 1fr;
+    padding: 5rem 0;
+  }
+
+  .swiper_pagination {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  /* === HERO SLIDER : image entière === */
+  .hero_slider,
+  .hero_slider .swiper-wrapper,
+  .hero_slider .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero_slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .Calque_5_img {
+    height: 31rem;
+    object-fit: cover;
+  }
+
+  .herov2_left h3 {
+    font-size: 2.6rem;
+    line-height: 1.25;
+  }
+
+  .hero_v2_area {
+    padding-top: 3.5rem;
+  }
+
+  .prev_next {
+    padding-top: 3rem;
+  }
+
+  .hero_slider_area {
+    padding: 3rem 0 6rem;
+  }
+
+  .image_slide_area .container-fluid {
+    padding-right: 0;
+    max-width: calc(100% + 0rem);
+  }
+
+  .image_slide_area {
+    padding-right: 3rem;
+  }
+
+  .image_slider .swiper-slide {
+    width: 36rem;
+  }
+
+  .image_slide {
+    height: 24rem;
+  }
+
+  .video_area_v2 .title_36 {
+    font-size: 3rem;
+    line-height: 1.35;
+    padding-bottom: 3rem;
+  }
+
+  .video_area_v2 video {
+    height: 39rem;
+  }
+
+  .maps_area_v2 .test_author * {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .maps_area_v2 .test_author p {
+    margin-bottom: 4rem;
+  }
+
+  .maps_area_v2 .test_author {
+    padding: 2rem 0 4rem;
+  }
+
+  .maps_area_v2 .phon_box_items button img {
+    width: 3.4rem;
+  }
+
+  .maps_area_v2 .phone-box {
+    gap: 1rem;
+  }
+
+  .maps_area_v2 .phon_box_items span {
+    font-size: 2.6rem;
+  }
+
+  .maps_area_v2 .phon_box_items {
+    margin: 0;
+    text-align: center;
+  }
+
+  .maps_area_v2 .phone-box input::placeholder {
+    font-size: 2rem;
+  }
+
+  .prev_next.v2 {
+    padding: 0rem 0 5rem;
+  }
+}
+
+/*----- xs devices (landscape phones, 575px and down) -----*/
+@media (max-width: 575px) {
+  /* === HERO SLIDER : image entière === */
+  .hero_slider,
+  .hero_slider .swiper-wrapper,
+  .hero_slider .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero_slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+}

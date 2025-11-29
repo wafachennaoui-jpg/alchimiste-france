@@ -1,0 +1,1312 @@
+/* ------ large and medium devices (dekstops and laptops, 992px and up) -----*/
+@media (min-width: 992px) {
+  html {
+    font-size: 0.52083333333vw;
+  }
+
+  .container-fluid {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 142rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hamburger_btn {
+    pointer-events: none;
+  }
+
+  .mobile_menu_bottom,
+  .close_icon {
+    display: none;
+  }
+
+  .agence_communication_box {
+    padding-bottom: 22rem;
+  }
+}
+
+/* ------ Medium devices (tablets, 1400px and down) -----*/
+@media (max-width: 1400px) {
+  /* asib khan */
+  .hounters_area {
+    height: 220rem;
+  }
+
+  .band_container {
+    width: 100rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+/* ------ Medium devices (tablets, 991px and down) -----*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    padding: 0 2.9rem;
+  }
+
+  .container-fluid {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  :root {
+    --menuHeight: 7.5rem;
+  }
+
+  /* =========== Header area ========== */
+  .primary_menu {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - var(--menuHeight)) !important;
+    left: 0;
+    top: var(--menuHeight);
+    align-items: flex-start !important;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    pointer-events: none;
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: 0.35s ease;
+    transition-delay: 0.25s;
+    padding-left: 0 !important;
+    z-index: auto;
+  }
+
+  .menu_active .primary_menu {
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+  .main_menu {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0 3rem 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .main_menu li a {
+    font-size: 2.5rem;
+  }
+
+  body.menu_active {
+    overflow: hidden !important;
+  }
+
+  .menu_overlay {
+    width: 200vw;
+    height: 200vh;
+    content: "";
+    background: rgb(255, 255, 255);
+    position: fixed;
+    left: -200vw;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 50% 50% 0;
+    transition: all 1.5s cubic-bezier(0.68, 0, 0.27, 1.55); /* elastic wave effect */
+    z-index: 1;
+  }
+
+  .menu_active .menu_overlay {
+    left: -50vw;
+  }
+
+  .main_menu li {
+    transition: 0.25s ease;
+  }
+
+  /* ============== Hamburger ============= */
+  .hamburger img {
+    width: 2rem;
+    position: absolute;
+    transition: 0.35s ease;
+    filter: var(--black_img);
+  }
+
+  .hamburger .close_icon {
+    width: 2rem;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  .hamburger {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+  }
+
+  .menu_active .hamburger .close_icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .menu_active .hamburger .Hamburger_icon {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  /* =================== Main style start ================== */
+  .left_part {
+    display: none;
+  }
+
+  /* mobile_menu_bottom */
+  .mobile_menu_bottom .header_left_links {
+    margin-left: 0;
+  }
+
+  .mobile_menu_bottom .social_icons {
+    flex-direction: row-reverse;
+    width: fit-content;
+    margin: 2rem auto;
+  }
+
+  .mobile_menu_bottom {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* ============== Header =============== */
+  .site_header .container-fluid,
+  .hero_area .container-fluid {
+    max-width: 100%;
+  }
+
+  .site_header.sticky {
+    height: var(--menuHeight);
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  .hamburger_btn {
+    margin-right: 2rem;
+  }
+
+  .hamburger_wrap {
+    width: fit-content;
+  }
+
+  .header_left .header_left_links {
+    display: none;
+  }
+
+  .site_header .container-fluid.pr_60 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  /* ==================  */
+  .right-part video {
+    height: 40rem;
+  }
+
+  .right-part .video__play-button-icon {
+    width: 8rem;
+  }
+
+  .hero_area {
+    height: auto;
+  }
+
+  /* ==================== counter_area =================== */
+  .counter_area .counter_content {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    gap: 2rem 0;
+  }
+
+  .title_111 {
+    font-size: 7rem;
+    line-height: 1;
+  }
+
+  .counter_box p {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
+
+  .counter_area {
+    padding: 3rem;
+  }
+
+  /* =================== project_row ==================== */
+  .project_row {
+    width: calc(100%);
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .column {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4rem 0;
+    justify-content: space-between;
+  }
+
+  .column.column_two {
+    padding: 0;
+    gap: 4rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .grid_two .project_main_box {
+    width: 100%;
+  }
+
+  .project_img {
+    width: 100% !important;
+  }
+
+  .column.column_one > div {
+    width: 48%;
+  }
+
+  .column_three .project_main_box {
+    width: 48%;
+  }
+  .column_two > .project_main_box {
+    width: 48%;
+  }
+
+  .project_img > img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover; /* Remplit le container en coupant si nécessaire */
+    display: block; /* Évite l'espace blanc des images inline */
+  }
+
+  .project_img > .pi_2 {
+    width: 100% !important;
+  }
+
+  .project_img .pi_6 {
+    width: 100% !important;
+  }
+
+  /* ================== News Slider ================ */
+  .slider_section {
+    padding-left: 5rem;
+  }
+
+  .slider_section .container-fluid {
+    max-width: 100%;
+  }
+
+  .news_box > img {
+    height: 40rem;
+  }
+
+  .news_slider .swiper-slide {
+    padding-right: 3rem;
+    width: 32rem;
+  }
+
+  .section_top {
+    max-width: 720px;
+  }
+
+  .section_left span {
+    margin: 0 10rem 0 0;
+  }
+
+  .slider_arrows {
+    display: none;
+  }
+
+  /* =============== Blog Slider ================= */
+  .blog_box > img {
+    height: 35rem;
+  }
+
+  .blog_slider .swiper-slide {
+    padding-right: 2rem;
+    width: 28rem;
+  }
+
+  .blog_box {
+    padding-left: 3.5rem;
+  }
+
+  /* ============== digital_area ============== */
+  .digital_video video {
+    height: 47.5rem;
+  }
+
+  /* =============== whychoseus_area =============== */
+  .whychoseus_area .grids_four {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wcu_bottom span {
+    font-size: 11rem;
+  }
+
+  .wcu_top {
+    height: 32rem;
+  }
+
+  .wcu_title {
+    padding-bottom: 5rem;
+  }
+
+  /* ================= newsletter_area ================== */
+  .newsletter_area p {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .newsletter_area {
+    padding: 3rem 2.5rem 3rem 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sendmail_btn img {
+    width: 3.5rem;
+  }
+
+  .email {
+    gap: 2.5rem;
+  }
+
+  .email input,
+  .email input::placeholder {
+    font-size: 2.5rem;
+  }
+
+  .email input {
+    width: 100%;
+  }
+
+  .digital_area .section_top {
+    margin-bottom: 3rem;
+    padding: 0 2.5rem;
+  }
+
+  /* ================ video_popup ================= */
+  .video_popup video {
+    height: 68rem;
+    width: 70rem;
+  }
+
+  /* asib khan */
+  .section_title h2 {
+    font-size: 3.2rem;
+  }
+
+  .section_title p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .clients_content {
+    display: block;
+    text-align: center;
+  }
+
+  .clients_items {
+    width: 100%;
+    text-align: center;
+  }
+
+  .clients_items_content img {
+    width: 6rem;
+  }
+
+  .clients_items_content p {
+    font-size: 2rem;
+  }
+
+  .clients_content .clients_items {
+    margin-bottom: 6rem;
+  }
+
+  .agence_communication_box .section_title {
+    padding-left: 11rem;
+    padding-right: 9rem;
+  }
+
+  .agence_communication_content {
+    max-width: 71rem;
+  }
+
+  .band_area .def_container {
+    max-width: 71rem;
+    margin: 0;
+  }
+
+  .agence_communication {
+    height: auto;
+  }
+
+  .band_contant {
+    margin-bottom: 0;
+  }
+
+  .band_contant.d-flex {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .band_items {
+    background: #1e1e1e;
+    padding: 3rem 2rem;
+    border-right: 0.1rem solid #fff;
+    width: 90%;
+    flex: 0 0 auto;
+    border-bottom: 0.1rem solid #fff;
+  }
+
+  .band_items p {
+    margin-bottom: 6rem;
+  }
+
+  .section_title {
+    padding-left: 10rem;
+  }
+
+  .section_title::before {
+    left: 5rem;
+  }
+
+  .band_container {
+    width: 64rem;
+  }
+
+  .hounters_content {
+    transform: translateY(-22rem);
+    min-height: 31rem;
+  }
+
+  .hounters_content .section_title {
+    padding: 9rem;
+    width: auto;
+  }
+
+  .hounters_container {
+    max-width: 52%;
+    margin: 0 0 0 auto;
+  }
+
+  .hounter_clients {
+    max-width: 50rem;
+    margin: 0 auto;
+    transform: translateY(-30rem);
+  }
+
+  .h_author {
+    text-align: center;
+  }
+
+  .h_author p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .h_author span {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+  }
+
+  .h_social_media img {
+    width: 2rem;
+  }
+
+  .h_social_media a {
+    margin-right: 0;
+  }
+
+  .h_client_items_content {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+  }
+
+  .testimonial_area {
+    transform: translateY(-32.5rem);
+  }
+
+  .testimonial_area .section_title h2 {
+    padding-left: 6rem;
+    padding-bottom: 0;
+  }
+
+  .testimonial_slider {
+    width: 55rem;
+  }
+
+  .hounters_area {
+    height: 150rem;
+  }
+
+  .agence_communication_bg img {
+    height: 40rem;
+    z-index: -1;
+  }
+
+  .band_swiper_pagination {
+    transform: translateY(-8rem);
+    text-align: center;
+    width: 20% !important;
+    margin: 0 auto;
+  }
+
+  .testimonial_area .section_title {
+    padding-bottom: 2rem;
+  }
+
+  .testimonial_slider {
+    width: 100%;
+  }
+
+  .test_author {
+    padding: 4rem 13.5rem;
+  }
+
+  .contact-container {
+    max-width: 75rem;
+    margin: -15rem auto 0 0;
+    padding: 0;
+    padding-top: 4rem;
+    z-index: auto;
+  }
+
+  .cont_from_container {
+    width: 65rem;
+    margin: 0;
+    margin-left: 4rem;
+  }
+
+  .section_title {
+    padding-top: 10rem;
+    padding-left: 0;
+  }
+
+  .maps_area .section_title::before {
+    left: 0;
+  }
+
+  .form-row {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .right_side {
+    display: inline-block;
+  }
+
+  .footer-container {
+    max-width: 70rem;
+  }
+
+  .footer-bottom {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: auto;
+  }
+
+  /* updates */
+  .agence_communication .section_title.pl_200 {
+    display: none;
+  }
+
+  .band_area,
+  .agence_communication_content {
+    transform: translateY(0);
+  }
+
+  .agence_communication_content {
+    margin-top: -10rem;
+  }
+
+  .band_area .section_top {
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    padding-left: 4rem;
+  }
+
+  /* band_slider_img */
+  .band_slider_img {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
+/*----- sm devices (tablets, 767px and down) -----*/
+@media (max-width: 767px) {
+  /* ============ default styles ============ */
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .primary_menu,
+  .container-fluid {
+    width: 540px;
+  }
+
+  .title_38 {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+
+  /* ==================== Project area ===================== */
+  .projects_area {
+    padding: 10rem 0 10rem;
+  }
+
+  .primary_menu,
+  .container-fluid {
+    padding: 0 2.5rem;
+  }
+
+  .column_two > .project_main_box {
+    width: 100%;
+  }
+
+  .column.column_one > div {
+    width: 100%;
+  }
+
+  .grid_two {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .column_three .project_main_box {
+    width: 100%;
+  }
+
+  .hero_area .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .projects_area .container-fluid {
+    padding: 0;
+  }
+
+  .column {
+    padding: 0 2.5rem !important;
+  }
+
+  .project_img {
+    height: 55rem !important;
+  }
+
+  .project_img .pi_6 {
+    width: 100% !important;
+  }
+
+  .project_img .pi_7 {
+    width: 100% !important;
+  }
+
+  .project_img .pi_10 {
+    width: 100% !important;
+  }
+
+  .project_play_icon img {
+    width: 10rem;
+  }
+
+  /* ====================== counter_area ===================== */
+  .counter_area {
+    padding: 2.5rem 0;
+  }
+
+  .title_111 {
+    font-size: 4.6rem;
+    letter-spacing: -0.05em;
+  }
+
+  .counter_box p {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding-left: 1.5rem;
+    letter-spacing: -0.05em;
+  }
+
+  .counter_area .counter_content {
+    grid-template-columns: 0fr 0fr;
+    gap: 2rem 2rem;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .counter_area .container-fluid {
+    padding: 0;
+  }
+
+  /* ====================== Project_area ===================== */
+  .project_top h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .project_top span {
+    margin-bottom: 4rem;
+  }
+
+  .projects_logo {
+    margin-bottom: 3rem;
+  }
+
+  /* ================= digital_area ==================== */
+  .digital_area:before {
+    display: none;
+  }
+
+  .digital_area .container-fluid {
+    padding: 0;
+  }
+
+  .digital_video video {
+    height: 24.5rem;
+  }
+
+  .digital_video .video__play-button-icon {
+    width: 8rem;
+  }
+  /* ============ whychoseus_area ============== */
+  .wcu_top {
+    height: 21rem;
+  }
+
+  .wcu_title {
+    padding-bottom: 3rem;
+  }
+
+  .wcu_bottom {
+    height: 14rem;
+    padding-top: 2rem;
+  }
+
+  .wcu_bottom span {
+    font-size: 9rem;
+  }
+
+  /* ================== Insta area =================== */
+  .instagram_content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .insta_area .container-fluid {
+    padding: 0;
+  }
+
+  .insta_area .section_top {
+    padding: 0 2.5rem;
+  }
+
+  /* =============== video_popup ============== */
+  .video_popup video {
+    height: 68rem;
+    width: 70rem;
+  }
+
+  .progress-wrap {
+    right: 2.5rem;
+    bottom: 2.5rem;
+  }
+
+  /* asib khan */
+  .agence_communication_bg img {
+    height: 38rem;
+  }
+
+  .agence_communication_content {
+    max-width: 59rem;
+  }
+
+  .agence_communication_box .section_title {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .section_title::before {
+    left: 1rem;
+    top: -4.5rem;
+  }
+
+  .agence_communication_box {
+    padding-top: 10rem;
+  }
+
+  .section_title p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+
+  .section_title h2 {
+    font-size: 2.8rem;
+  }
+
+  .agence_communication_box_content {
+    display: inline-block;
+  }
+
+  .praga {
+    width: 100% !important;
+  }
+
+  .agence_communication_box_content .w_260 p {
+    font-size: 2.8rem;
+  }
+
+  .band_items {
+    width: 90%;
+  }
+
+  .agence_communication {
+    height: auto;
+  }
+
+  .band_swiper_pagination {
+    transform: translateY(-8rem);
+    text-align: center;
+  }
+
+  .band_slider_arrow {
+    display: none;
+  }
+
+  .hounters_container {
+    max-width: 100%;
+  }
+
+  .hounters_bg img {
+    width: 100%;
+    height: 33.1rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hounters_area {
+    height: auto;
+  }
+
+  .hounters_content .section_title .title_38 {
+    padding-top: 8rem;
+  }
+
+  .hounters_content .section_title {
+    padding: 5rem 3rem;
+  }
+
+  .hounters_content .section_title::before {
+    position: absolute;
+    left: 3rem;
+    right: 0;
+    width: 2rem;
+    height: 0.2rem;
+    background: #c67050;
+    content: "";
+    top: 6rem;
+  }
+
+  .hounters_content {
+    transform: none;
+    min-height: 50rem;
+    margin-top: 2rem;
+  }
+
+  .hounter_client_items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hounter_clients {
+    max-width: 44.8rem;
+    transform: none;
+  }
+
+  .testimonial_area {
+    transform: none;
+  }
+
+  .h_client_items_content {
+    max-width: 42.33%;
+  }
+
+  .hounter_clients {
+    max-width: 44.8rem;
+    margin: 0 3rem 0 auto;
+    transform: translateY(-10rem);
+  }
+
+  .h_client_items_content {
+    max-width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .hounters_area {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .section_title {
+    padding-left: 3rem;
+  }
+
+  .testimonial_area .section_title::before {
+    left: 3rem;
+    top: 2rem;
+  }
+
+  .hounter_clients {
+    max-width: 50rem;
+    margin: 0 3rem 0 auto;
+    transform: translateY(-10rem);
+  }
+
+  .testimonial_area .section_title h2 {
+    padding-left: 8rem;
+  }
+
+  .testimonial_area {
+    transform: translateY(-10rem);
+  }
+
+  .section_title {
+    position: relative;
+    padding-bottom: 0;
+    margin-top: 3rem;
+  }
+
+  .text_slider_arrow {
+    display: none;
+  }
+
+  .test_author .text_left {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    text-align: center;
+  }
+
+  .test_author p {
+    font-size: 1.2rem;
+  }
+
+  .test_author h2 {
+    font-size: 2rem;
+  }
+
+  .test_author img {
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .test_author {
+    padding: 2rem 8rem 3rem 8rem;
+  }
+
+  .contact-container {
+    padding: 2rem;
+    margin: -5rem 1rem 3rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .phone-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .phone-box span {
+    margin-bottom: 1rem;
+  }
+
+  .phone-box input {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-bottom: 2rem;
+  }
+
+  .cont_from_container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact-container {
+    max-width: 60rem;
+    padding: 2rem 4rem;
+    margin: -10rem 0 0 0;
+  }
+
+  .cont_from_container .section_title {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-top: 8rem;
+  }
+
+  .maps_area .section_title::before {
+    top: 5rem;
+  }
+
+  .phone-box input {
+    margin-left: 0;
+  }
+
+  .phone-box button {
+    width: 4rem;
+  }
+
+  .phon_box_items {
+    margin-bottom: 2rem;
+  }
+
+  /* band_slider_img */
+  .band_slider_img {
+    max-width: 100%;
+    padding: 3rem;
+  }
+
+  .testimonial_area .section_left {
+    padding-left: 3rem;
+  }
+}
+
+/*----- xs devices (landscape phones, 575px and down) -----*/
+@media (max-width: 575px) {
+  html {
+    font-size: 2.32vw;
+  }
+
+  /* menu */
+  .primary_menu,
+  .container-fluid {
+    width: calc(100%);
+  }
+
+  /* ============== slider_section =============== */
+  .slider_section {
+    padding-left: 0;
+  }
+
+  .section_left span {
+    margin: 0 3rem 0 0;
+  }
+
+  .slider_arrows {
+    display: none;
+  }
+
+  .section_left .title_38 {
+    line-height: 1;
+  }
+
+  .section_top {
+    margin-bottom: 3rem;
+  }
+
+  /* ============ whychoseus_area ============== */
+  .whychoseus_area {
+    padding: 8rem 2.5rem;
+  }
+
+  .whychoseus_area .grids_four {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .whychoseus_area .container-fluid {
+    padding: 0;
+  }
+
+  /* ================= video_popup ================== */
+  .video_popup video {
+    height: 68rem;
+    width: 70rem;
+  }
+
+  .close_popup img {
+    width: 2rem;
+  }
+
+  .close_popup {
+    right: 2rem;
+    top: 2rem;
+  }
+
+  /* asib khan */
+  .agence_communication_content {
+    max-width: 38rem;
+    transform: translateY(0);
+    margin-top: -10rem;
+  }
+
+  .agence_communication {
+    height: auto;
+  }
+
+  .band_area {
+    transform: translateY(-2rem);
+  }
+
+  .band_items {
+    width: 90%;
+  }
+
+  .clients_area {
+    padding-bottom: 1rem;
+  }
+
+  .agence_communication_box {
+    padding-bottom: 0;
+  }
+
+  .band_area {
+    transform: translateY(0);
+  }
+
+  .section_title {
+    padding-left: 8rem;
+  }
+
+  .section_title::before {
+    left: 1rem;
+    top: 1.5rem;
+  }
+
+  .band_items .f-700 {
+    font-size: 1.5rem;
+  }
+
+  .band_items {
+  
+    width: 90%;
+    padding: 2.5rem 1rem;
+  }
+
+  .band_items p {
+    font-size: 1.3rem;
+  }
+
+  .band_img img {
+    width: calc(3.75rem * var(--mantine-scale));
+  }
+
+  .agence_communication {
+    height: auto;
+  }
+
+  .band_container {
+    width: 34rem;
+  }
+
+  .hounters_content {
+    transform: none;
+    min-height: 55rem;
+  }
+
+  .hounter_clients {
+    max-width: 31rem;
+    margin: 0 0 0 auto;
+  }
+
+  .testimonial_area .section_title h2 {
+    padding-left: 1rem;
+  }
+
+  .agence_communication_box .section_title::before {
+    left: 1rem;
+    top: -4.5rem;
+  }
+
+  .contact-container {
+    max-width: 28rem;
+  }
+
+  .phone-box span {
+    font-size: 1.7rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  /* band_slider_img */
+  .band_slider_img {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .band_slider_img.v5 {
+    padding: 2rem;
+  }
+
+  .h_client_items_content {
+    max-width: 70%;
+  }
+
+  .hounter_clients {
+    margin-left: 9rem;
+  }
+}
